@@ -1,0 +1,18 @@
+(@buy @sell @storage @getback @repair @s_repair @@sendmsg @@CreateHero @bigstorage @biggetback @getnextpage @getPreviouspage )
+[@StdModeFunc30]
+#IF
+#ACT
+KILLMONEXPRATE 200 3600
+SENDMSG 7 你获得了1个小时双倍经验,期间死亡或下线不减少双倍时间,重复使用无效!
+
+[@StdModeFunc29]
+#IF
+#ACT
+POWERRATE 150 1800
+SENDMSG 7 你获得了半小时1.5倍攻击力,期间死亡或下线效果即刻消失,重复使用无效!
+
+[@PlayDie]
+#IF
+#ACT
+takew 赤血魔剑 1
+break

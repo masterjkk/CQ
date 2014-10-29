@@ -1,0 +1,24 @@
+[@Login]
+#IF
+ISNEWHUMAN
+#ACT
+give 蜡烛 1
+SENDMSG 5 新手提示：请按F12呼出游戏内挂，请于4级前到助手小姐处接任务！
+BREAK
+
+#IF
+ISCASTLEMASTER
+#ACT
+SENDMSG 0 万众欢呼，号令天下的沙城主『<$USERNAME>』进入游戏!
+BREAK
+
+#IF
+#ACT
+SENDMSG 6 提示：当前的声望值为:<$CREDITPOINT>点...
+BREAK
+
+#IF
+#ACT
+VAR INTEGER HUMAN Cache
+CALCVAR HUMAN Cache = 0
+BREAK
